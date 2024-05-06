@@ -13,6 +13,21 @@
   }
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Adjust the global text color */
+body {
+  color: #757575; /* Light grey text */
+  background-color: #fff; /* Ensuring background is white */
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,18 +36,52 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #757575; /* Ensuring header text is also light grey */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #757575; /* Light grey links */
+  transition: color 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-link:hover {
+  color: #61dafb; /* Keeping hover effect */
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  list-style: none;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-content {
+  margin-left: 2px;
+  padding: 8px;
+  background-color: white;
+  border-left: 2px solid #ccc;
+}
+
+.advisor-link {
+  color: #007BFF; /* Blue for advisors */
+  text-decoration: none;
+}
+
+.advisor-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
 }

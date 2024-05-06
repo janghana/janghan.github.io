@@ -1,0 +1,45 @@
+.app-container {
+  text-align: left;
+  margin-left: 20px;
+  color: #333; /* Light grey text */
+}
+
+.main-nav {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.main-nav a {
+  font-weight: bold; /* Bold text */
+  color: #666; /* Slightly darker grey for text */
+  font-size: 20px; /* Increased font size */
+  text-decoration: none;
+  position: relative;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0; /* Starts with zero width */
+  height: 4px; /* Thicker underline */
+  bottom: -5px;
+  left: 0;
+  background-color: #666; /* Matching the text color */
+  transition: width 0.5s ease-out; /* Slower transition for the underline */
+}
+
+.main-nav a:hover::after {
+  width: 100%; /* Full width on hover */
+}
+
+/* Footer style */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px; /* Adjusted font size in the footer */
+}
